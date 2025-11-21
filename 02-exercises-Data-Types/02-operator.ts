@@ -8,12 +8,12 @@ function operator(
             if (typeof param !== 'number') {
                 return param.at(operand)
             }
-            break;
+
         case 'Length':
             if (typeof param !== 'number') {
                 return param.length % operand
             }
-            break;
+
         case 'Add':
             if (!Array.isArray(param)) {
                 return Number(param) + operand
